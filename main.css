@@ -14,8 +14,7 @@
     border-top: none;
 }
 
-.dropdown-menu li:hover,
-.dropdown-menu .active {
+.dropdown-menu li:hover, .dropdown-menu .active {
     background-color: rgb(110, 183, 219);
 }
 
@@ -31,3 +30,5 @@
 .dropdown-menu a:hover {
     cursor: pointer;
 }
+
+/*# sourceMappingURL=maps/main.css.map */
