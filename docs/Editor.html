@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Textarea</title>
+    <title>JSDoc: Class: Editor</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: Textarea</h1>
+    <h1 class="page-title">Class: Editor</h1>
 
     
 
@@ -28,9 +28,9 @@
 
 <header>
     
-        <h2>Textarea</h2>
+        <h2>Editor</h2>
         
-            <div class="class-description">Encapsulate the target textarea element.</div>
+            <div class="class-description">Abstract class representing a editor target.</div>
         
     
 </header>
@@ -44,7 +44,7 @@
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="Textarea"><span class="type-signature"></span>new Textarea<span class="signature">(el)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Editor"><span class="type-signature">(abstract) </span>new Editor<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -56,55 +56,6 @@
 
 
 
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>el</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">HTMLTextAreaElement</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Where the textcomplete works on.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -140,7 +91,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="textarea.js.html">textarea.js</a>, <a href="textarea.js.html#line12">line 12</a>
+        <a href="editor.js.html">editor.js</a>, <a href="editor.js.html#line13">line 13</a>
     </li></ul></dd>
     
 
@@ -176,7 +127,7 @@
 
 
     <ul>
-        <li><a href="Editor.html">Editor</a></li>
+        <li>EventEmitter</li>
     </ul>
 
 
@@ -220,11 +171,6 @@ returns `{top: number, left: number}` object.
 
     
 
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="Editor.html#cursorOffset">Editor#cursorOffset</a>
-    </li></ul></dd>
     
 
     
@@ -353,11 +299,6 @@ returns `{top: number, left: number}` object.
     
 
     
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="Editor.html#applySearchResult">Editor#applySearchResult</a>
-    </li></ul></dd>
-    
 
     
 
@@ -441,11 +382,6 @@ returns `{top: number, left: number}` object.
 
     
 
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Editor.html#event:blur">Editor#event:blur</a>
-    </li></ul></dd>
     
 
     
@@ -587,11 +523,6 @@ returns `{top: number, left: number}` object.
     
 
     
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Editor.html#event:change">Editor#event:change</a>
-    </li></ul></dd>
-    
 
     
 
@@ -632,6 +563,11 @@ returns `{top: number, left: number}` object.
 
 
 
+
+<h5>Listeners of This Event:</h5>
+<ul>
+    <li><a href="Textcomplete.html#trigger">Textcomplete#trigger</a></li>
+</ul>
 
 
 
@@ -754,11 +690,6 @@ returns `{top: number, left: number}` object.
 
     
 
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Editor.html#event:move">Editor#event:move</a>
-    </li></ul></dd>
     
 
     
