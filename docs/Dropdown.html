@@ -44,7 +44,7 @@
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="Dropdown"><span class="type-signature"></span>new Dropdown<span class="signature">(className<span class="signature-attributes">nullable</span>, style<span class="signature-attributes">nullable</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Dropdown"><span class="type-signature"></span>new Dropdown<span class="signature">(className<span class="signature-attributes">opt</span>, footer<span class="signature-attributes">opt</span>, header<span class="signature-attributes">opt</span>, style<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
@@ -75,6 +75,8 @@
         
 
         
+        <th>Default</th>
+        
 
         <th class="last">Description</th>
     </tr>
@@ -100,9 +102,9 @@
             
                 <td class="attributes">
                 
-
+                    &lt;optional><br>
                 
-                    &lt;nullable><br>
+
                 
 
                 
@@ -110,8 +112,94 @@
             
 
             
+                <td class="default">
+                
+                    DEFAULT_CLASS_NAME
+                
+                </td>
+            
 
             <td class="description last"><p>The class attribute of the el.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>footer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>header</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"></td>
         </tr>
 
     
@@ -124,7 +212,7 @@
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">Object</span>
 
 
             
@@ -133,15 +221,19 @@
             
                 <td class="attributes">
                 
-
+                    &lt;optional><br>
                 
-                    &lt;nullable><br>
+
                 
 
                 
                 </td>
             
 
+            
+                <td class="default">
+                
+                </td>
             
 
             <td class="description last"><p>The style of the el.</p></td>
@@ -260,7 +352,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line13">line 13</a>
+        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line18">line 18</a>
     </li></ul></dd>
     
 
@@ -355,7 +447,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line59">line 59</a>
+        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line65">line 65</a>
     </li></ul></dd>
     
 
@@ -429,7 +521,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line17">line 17</a>
+        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line22">line 22</a>
     </li></ul></dd>
     
 
@@ -529,7 +621,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line82">line 82</a>
+        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line94">line 94</a>
     </li></ul></dd>
     
 
@@ -674,7 +766,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line129">line 129</a>
+        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line141">line 141</a>
     </li></ul></dd>
     
 
@@ -846,7 +938,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line70">line 70</a>
+        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line76">line 76</a>
     </li></ul></dd>
     
 
@@ -991,7 +1083,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line91">line 91</a>
+        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line103">line 103</a>
     </li></ul></dd>
     
 
@@ -1141,7 +1233,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line106">line 106</a>
+        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line118">line 118</a>
     </li></ul></dd>
     
 
@@ -1291,7 +1383,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line121">line 121</a>
+        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line133">line 133</a>
     </li></ul></dd>
     
 
@@ -1457,7 +1549,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line92">line 92</a>
+        <a href="dropdown.js.html">dropdown.js</a>, <a href="dropdown.js.html#line104">line 104</a>
     </li></ul></dd>
     
 
@@ -1495,13 +1587,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Completer.html">Completer</a></li><li><a href="Dropdown.html">Dropdown</a></li><li><a href="DropdownItem.html">DropdownItem</a></li><li><a href="Editor.html">Editor</a></li><li><a href="Query.html">Query</a></li><li><a href="SearchResult.html">SearchResult</a></li><li><a href="Strategy.html">Strategy</a></li><li><a href="Textarea.html">Textarea</a></li><li><a href="Textcomplete.html">Textcomplete</a></li></ul><h3>Events</h3><ul><li><a href="Completer.html#event:hit">hit</a></li><li><a href="Dropdown.html#event:select">select</a></li><li><a href="Editor.html#event:blur">blur</a></li><li><a href="Editor.html#event:change">change</a></li><li><a href="Editor.html#event:move">move</a></li><li><a href="Textarea.html#event:blur">blur</a></li><li><a href="Textarea.html#event:change">change</a></li><li><a href="Textarea.html#event:move">move</a></li></ul><h3>Global</h3><ul><li><a href="global.html#lock">lock</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Completer.html">Completer</a></li><li><a href="Dropdown.html">Dropdown</a></li><li><a href="DropdownItem.html">DropdownItem</a></li><li><a href="Editor.html">Editor</a></li><li><a href="Query.html">Query</a></li><li><a href="SearchResult.html">SearchResult</a></li><li><a href="Strategy.html">Strategy</a></li><li><a href="Textarea.html">Textarea</a></li><li><a href="Textcomplete.html">Textcomplete</a></li></ul><h3>Events</h3><ul><li><a href="Completer.html#event:hit">hit</a></li><li><a href="Dropdown.html#event:select">select</a></li><li><a href="Editor.html#event:blur">blur</a></li><li><a href="Editor.html#event:change">change</a></li><li><a href="Editor.html#event:move">move</a></li><li><a href="Textarea.html#event:blur">blur</a></li><li><a href="Textarea.html#event:change">change</a></li><li><a href="Textarea.html#event:move">move</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createFragment">createFragment</a></li><li><a href="global.html#lock">lock</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Fri Feb 26 2016 18:26:02 GMT+0000 (UTC)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Sun Feb 28 2016 03:16:24 GMT+0000 (UTC)
 </footer>
 
 <script> prettyPrint(); </script>
