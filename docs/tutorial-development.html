@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: search-result.js</title>
+    <title>JSDoc: Tutorial: Development</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,58 +17,21 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: search-result.js</h1>
+    <h1 class="page-title">Tutorial: Development</h1>
 
-    
-
-
-
-    
     <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>class SearchResult {
-  /**
-   * @param {object} data - An element of array callbacked by search function.
-   * @param {string} term
-   * @param {Strategy} strategy
-   */
-  constructor(data, term, strategy) {
-    this.data = data;
-    this.term = term;
-    this.strategy = strategy;
-  }
 
-  /**
-   * @param {string} beforeCursor
-   * @param {string} afterCursor
-   * @returns {string[]|undefined}
-   */
-  replace(beforeCursor, afterCursor) {
-    var replacement = this.strategy.replace(this.data);
-    if (replacement != null) {
-      if (Array.isArray(replacement)) {
-        afterCursor = replacement[1] + afterCursor;
-        replacement = replacement[0];
-      }
-      return [beforeCursor.replace(this.strategy.match, replacement), afterCursor];
-    }
-  }
+<header>
+    
 
-  /**
-   * @returns {string}
-   */
-  render() {
-    return this.strategy.template(this.data, this.term);
-  }
-}
+    <h2>Development</h2>
+</header>
 
-export default SearchResult;
-</code></pre>
-        </article>
-    </section>
+<article>
+    <h3>Setup Dev Env</h3><pre class="prettyprint source"><code>npm install</code></pre><h3>Run Tests</h3><pre class="prettyprint source"><code>npm test</code></pre><h3>Run Development Server</h3><pre class="prettyprint source"><code>npm start</code></pre><p>Then open <a href="http://localhost:8080/textcomplete">http://localhost:8080/textcomplete</a> in your browser.</p>
+</article>
 
-
-
+</section>
 
 </div>
 
