@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: query.js</title>
+    <title>JSDoc: Tutorial: events</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,58 +17,63 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: query.js</h1>
+    <h1 class="page-title">Tutorial: events</h1>
 
-    
-
-
-
-    
     <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>import SearchResult from './search-result';
 
-/**
- * Encapsulate matching condition between a Strategy and current editor's value.
- */
-class Query {
-  /**
-   * @param {Strategy} strategy
-   * @param {string} term
-   * @param {string[]} match
-   */
-  constructor(strategy, term, match) {
-    this.strategy = strategy;
-    this.term = term;
-    this.match = match;
-  }
+<header>
+    
 
-  /**
-   * Invoke search strategy and callback the given function.
-   *
-   * @public
-   * @param {function} callback
-   */
-  execute(callback) {
-    this.strategy.search(
-      this.term,
-      results => {
-        callback(results.map(result => {
-          return new SearchResult(result, this.term, this.strategy);
-        }));
-      },
-      this.match
-    );
-  }
-}
+    <h2>events</h2>
+</header>
 
-export default Query;
-</code></pre>
-        </article>
-    </section>
+<article>
+    <p>Textcomplete provides custom events for most actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is triggered on the completion of an action.</p>
+<p>An infinitive events provide <code>preventDefault</code> functionality. This provides the ability to stop the execution of an action before it starts.</p>
+<table>
+<thead>
+<tr>
+<th>Event Type</th>
+<th>Detail</th>
+<th>Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show</td>
+<td><a href="Dropdown.html#event:show">Dropdown#event:show</a></td>
+<td>This event is fired immediately when the dropdown is going to be shown.</td>
+</tr>
+<tr>
+<td>shown</td>
+<td><a href="Dropdown.html#event:shown">Dropdown#event:shown</a></td>
+<td>This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions to complete).</td>
+</tr>
+<tr>
+<td>render</td>
+<td><a href="Dropdown.html#event:render">Dropdown#event:render</a></td>
+<td>This event is fired immediately when dropdown items are goint to be visible to the user.</td>
+</tr>
+<tr>
+<td>rendered</td>
+<td><a href="Dropdown.html#event:rendered">Dropdown#event:rendered</a></td>
+<td>This event is fired when the dropdown items have been visible to the user (will wait for CSS transitions to complete).</td>
+</tr>
+<tr>
+<td>hide</td>
+<td><a href="Dropdown.html#event:hide">Dropdown#event:hide</a></td>
+<td>This event is fired immediately when the dropdown is going to be hidden.</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td><a href="Dropdown.html#event:hidden">Dropdown#event:hidden</a></td>
+<td>This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+</tr>
+</tbody>
+</table>
+</article>
 
-
-
+</section>
 
 </div>
 
