@@ -1,7 +1,5 @@
 // @flow
 
-import extend from 'lodash.assignin';
-
 /**
  * Exclusive execution control utility.
  *
@@ -77,10 +75,16 @@ export function createFragment(tagString: string): DocumentFragment {
  * Create a custom event
  */
 export function createCustomEvent(type: string, options: ?{ detail?: Object; cancelable?: boolean; }): CustomEvent {
-  return new document.defaultView.CustomEvent(type, extend({
-    cancelable: false,
-    detail: undefined,
-  }, options));
+  const cancelable = options && options.cancelable || false;
+  const detail = options && options.detail || undefined;
+  try {
+    return new document.defaultView.CustomEvent(type, { cancelable, detail });
+  } catch (e) {
+    // IE
+    const event = document.defaultView.createEvent('CustomEvent');
+    event.initCustomEvent(type, false, cancelable, detail);
+    return event;
+  }
 }
 
 /**

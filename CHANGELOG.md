@@ -10,6 +10,9 @@ This change log adheres to [keepachangelog.com](http://keepachangelog.com).
 ### Changed
 - `Dropdown~Offset` must have "lineHeight" property.
 
+### Fixed
+- IE doesn't have `window.CustomEvent` object
+
 ## [0.8.0] - 2016-04-25
 ### Added
 - Let textarea editor deactivate a dropdown on esc key.
